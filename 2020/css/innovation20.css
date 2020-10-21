@@ -184,7 +184,7 @@ p.nav-text {
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
  font-family: "TrimPoster-Average";
-  src: url(..fonts/TrimPoster-Average.otf);
+  src: url(../fonts/TrimPoster-Average.otf);
 }   
 
 @font-face {
