@@ -1,0 +1,33 @@
+.baeza {
+    min-height: 300px; /* This controls height of div */
+    margin-bottom: 30px;
+    max-width:100%;
+    background-image: url(../images/begona-baeza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: azure
+    }
+
+a:link.audioimage {
+    text-decoration: none;
+}
+
+a:hover.audioimage {
+    opacity:.7;
+}
+
+.audiodiv {
+    background-color: #ededed;
+}
+
+.audiodiv h2 {
+    font-family: "TrimPoster-Average";
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 10px 20px 0 20px;
+}
+
+.audiodiv p {
+    margin: 10px 20px 20px 20px;
+}
