@@ -1,3 +1,17 @@
+@font-face {
+ font-family: "TrimPoster-Average";
+  src: url(https://web.northeastern.edu/mediainnovation19/fonts/TrimPoster-Average.otf
+);
+}
+
+@font-face {
+ font-family: "Metric-Regular";
+  src: url(https://web.northeastern.edu/mediainnovation19/fonts/Metric-Regular.otf
+);
+}
+
+
+
 .audioplayer {
     background-color: #ededed;
     margin-bottom: 30px;
@@ -31,3 +45,4 @@
   top: 180px;
   width: 100%;
 }
+
