@@ -222,7 +222,7 @@ p.nav-text {
 }
 
 h2 {
-    font-family: "Metric-Regular","Helvetica",sans-serif;
+    font-family: "Metric-Regular","Helvetica-Bold",sans-serif;
     font-size: 2.6rem;
     line-height: 3.3rem;
     color:#666;
@@ -275,16 +275,9 @@ a:active {
 
 h3.namelink {
     color: white;
-    font-family: "OpenSans","Helvetica-Bold",sans-serif;
+    font-family: "TrimPoster-Average","Helvetica-Bold",sans-serif;
     font-size: 4rem;
     line-height: 3rem;}
-
-h2.intro {
-    font-family:"Cormorant",serif;
-    font-size: 3em;
-    line-height: 1.5em;
-    margin-top: 5%;
-}
 
 /* Image styles 
 ------------------------------------------------------------------- */
@@ -323,7 +316,7 @@ img.mySlides  {
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h5 {
-    font-family: "OpenSans","Helvetica",sans-serif;
+    font-family: "Metric-Regular","Helvetica",sans-serif;
     letter-spacing: 0.02em;
     font-weight: 100;
     font-size: 1.5rem;
@@ -382,59 +375,35 @@ h5 {
 
 /* Teasers
 ---------------------------------------------------------------------- */
-a:link .teaser {
-    background-color: white;
-    padding: 30px;
-    border:10px solid #e50000;
-    min-height: 270px;
-    margin-top: 30px;
+div.teaser {
+    margin-top: 20px;
+    border-top: solid 1px #ededed;
 }
 
-@media (min-width:550px){ /*TURNED OFF FOR MOBILE */
-a:link .blackborder {
-    background-color: white;
-    padding: 30px;
-    border:10px solid #333;
-    min-height: 270px;
-    margin-top: 30px;
-}
-}
-
-a:hover .teaser {
-    background-color: #ededed;
-    border:10px solid darkgray;
-}
-
-a:visited .teaser {
-    background-color: white;
-    border:10px solid #e50000;
-}
-
-.teaser h3 {
-    font-family: "OpenSans","Helvetica-Bold",sans-serif;
-    font-size: 2.5rem;
-    color:#666;
-    line-height: 4.2rem;
+h2.teaser {
+    font-family: "TrimPoster-Average","Helvetica-Bold",sans-serif;
+    font-size: 5rem;
+    line-height: 4rem;
     letter-spacing: normal;
-    margin-top: -3%;
-    color:black;
-    opacity:.8;
-}
-
-a:link span.teasername {
-    color:#e50000;
     text-transform: uppercase;
-    font-size: .8em;
-    padding: 5px;
-    background-color: #ededed;
+    margin-top: -3%;
 }
 
-a:hover span.teasername {
+h3.teaser {
+    font-family: "Metric-Regular","Helvetica-Bold",serif;
+    font-size: 2.5rem;
+    color:darkgrey;
+}
+
+div.teaser: {
     background-color: white;
 }
 
+div.teaser:hover {
+    background-color: #efefef;
+}
     
-.teaser img {
+    .teaser img {
         padding-top: 30px;
 }
 
