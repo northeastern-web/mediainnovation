@@ -1,0 +1,29 @@
+figure.mySlides {
+    margin:0;
+}
+
+figure.mySlides img {
+    width:100%;
+}
+
+figure.mySlides figcaption {
+    margin-top: 0px;
+    color: darkgray;
+    padding-bottom: 10px;
+    border-bottom: solid 1px darkgray;
+}
+
+button.w3-button {
+    background-color: black;
+    color:white;
+    opacity:0.5;
+    margin-bottom: 10px;
+}
+
+button.w3-display-left {
+    float:left;
+}
+
+button.w3-display-right {
+    float: right;
+}

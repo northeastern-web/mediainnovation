@@ -1,0 +1,225 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: #202020;
+  color: white;
+}
+
+/* TOP CONTENT */
+
+.topimage {
+  background: url('../images/JQ879907.jpg');
+  background-size: 100%;
+  width: 100%;
+  z-index: 0;
+  min-height: 800px;
+  object-fit: cover;
+}
+
+.top-container {
+  position: relative;
+  text-align: center;
+}
+
+.social-media-container {
+  position: absolute;
+  top: 7%;
+  left: 92.5%;
+  transform: translate(-50%, -50%);
+}
+
+.top-content-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.top-content-container h1 {
+  font-family: 'TrimPoster-Average', sans-serif;
+  font-weight: lighter;
+  color: white;
+  font-size: 140px;
+}
+
+.mysubhead {
+  color: #a5a5a5;
+  position: relative;
+  left: 0px;
+  top: -25px;
+}
+
+.top-caption {
+  font-family: "BentonSansCond-Bold", "Helvetica", sans-serif;
+  color: #707070;
+  font-size: 10pt;
+  text-align: center;
+}
+
+/* STORY */
+
+.container {
+  padding-top: 70px;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.byline {
+  font-weight: bold;
+  font-size: 18px;
+  color: #46A0FF;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.padded-dropcap {
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  float: left;
+  position: relative;
+  top: -0.40em;
+  margin-bottom: -1em;
+  margin-left: -6px;
+  margin-right: 2px;
+  font-size: 87px;
+}
+
+.container p {
+  color:white;
+}
+
+/* PULL QUOTES */
+
+.pull {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  line-height: 175%;
+}
+
+.pullquote {
+  font-family: BentonSansCond-Bold;
+  font-size: 19pt;
+  color: #2cace3;
+  padding-top: 15px;
+}
+
+.pullquote:before {
+display: block;
+content: "\2018\2018";
+font-size: 250pt;
+font-family: "Georgia", serif;
+position: relative;
+z-index: -1;
+left: -14px;
+top: 95px;
+color: #707070;
+opacity: 0.25;
+letter-spacing: -0.01em;
+;
+}
+
+.pullcredit {
+  font-family: "Metric-Regular", serif;
+  font-size: 18pt;
+  color: #707070;
+  text-align: right;
+  vertical-align: text-top;
+
+}
+
+.sub {
+  text-transform:uppercase;
+  font-weight: bold;
+  font-size:20pt;
+  font-family: "Metric-Regular", "Helvetica", sans-serif;
+}
+
+/* LINKS */
+/*
+a:link {
+  font-family: "Metric-Regular", sans-serif;
+  text-align: center;
+  color: #f0494f;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a:hover {
+  color: #ff878b;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f0494f;
+}
+*/
+
+/* PHOTO */
+
+.container img {
+  width:100%;
+  border: 2px solid #ddd;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+a:link.storyshots {
+    border-bottom: none;
+}
+
+a:hover.storyshots {
+    opacity: .9;
+}
+
+
+p.caption {
+  font-family: "Metric-Regular", "Helvetica", sans-serif;
+  color: #a5a5a5;
+  font-size: 1.2em;
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 481px) {
+  #vertical {
+    width: 32.5%;
+    height: auto;
+    float: right;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  #vertical {
+    width: 100%;
+    height:auto;
+    float: none;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+  }
+}
