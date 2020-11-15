@@ -1,0 +1,62 @@
+@font-face {
+ font-family: “TrimPoster-Average”;
+  src: url(https://web.northeastern.edu/mediainnovation19/fonts/TrimPoster-Average.otf
+);
+}
+@font-face {
+ font-family: “Metric-Regular”;
+  src: url(https://web.northeastern.edu/mediainnovation19/fonts/Metric-Regular.otf
+);
+}
+
+.audioplayer {
+    background-color: #ededed;
+    margin-bottom: 30px;
+
+}
+
+.baeza {
+    min-height: 200px; /* This controls height of div */
+    margin-bottom: 35px;
+    max-width:100%;
+    background-image: url(../images/BegonaBaeza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.xavier {
+    min-height: 200px; /* This controls height of div */
+    margin-bottom: 35px;
+    max-width:100%;
+    background-image: url(../images/EduardaXavier.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.alonso {
+    min-height: 200px; /* This controls height of div */
+    margin-bottom: 35px;
+    max-width:100%;
+    background-image: url(../images/SabrinaAlonso.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.audioplayer h2 {
+    font-family: "TrimPoster-Average";
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 10px 20px 0 20px;
+}
+
+.audioplayer p {
+    margin: 10px 20px 20px 20px;
+}
+
+.audioplayer audio {
+  position: relative;
+  top: 180px;
+  width: 100%;
+}
+
