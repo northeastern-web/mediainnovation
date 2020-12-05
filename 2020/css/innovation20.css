@@ -13,8 +13,8 @@
 }
 
 
-/* Hamburger nav and menu
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* ----------------------  HAMBURGER NAV and MENU --------------------------- */
+
 a
 {
   text-decoration: none;
@@ -25,46 +25,20 @@ a
 
 a:hover
 {
-  color: #d3252c;
+  color: #d3222a;
 }
 
 /*
  * Black bar with logo
  */
 
-/* Larger than mobile */
-@media (min-width: 415px) {
-.nav {   
+.essential-nav {   
     background-color: #ededed;
     height: 55px;
     background-image: url("../images/inno20_logo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 36px; 
-    z-index: 300;
-    }
-}
-
-/* Mobile */
-@media (max-width: 414px) {
-.nav {   
-    background-color: #ededed;
-    height: 55px;
-    background-image: url("../images/inno20_logo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50% 36px; 
-        z-index: 300;
-
-    }
-}
-
-p.nav-text {
-    font-family: "Metric-Regular","Helvetica-Bold",sans-serif;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    border-bottom: 1px solid black;
-    width: 3rem;
+    background-size: auto 37px;
 
 }
 
@@ -84,7 +58,7 @@ p.nav-text {
 #menuToggle input
 {
   display: block;
-  width: 100px;
+  width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -104,12 +78,12 @@ p.nav-text {
 #menuToggle span
 {
   display: block;
-  width: 0px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   
-  background: white;
+  background: black;
   border-radius: 3px;
   
   z-index: 1;
@@ -139,7 +113,7 @@ p.nav-text {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ededed;
+  background: #232323;
 }
 
 /*
@@ -181,10 +155,30 @@ p.nav-text {
 }
 
 #menu li
-    {
+{
     padding: 10px 0;
-    font-size: 2rem;
-    font-family: "TrimPoster-Average",Helvetica,sans-serif;    
+    margin-bottom: 10px;
+    border-bottom: solid 1px white;
+
+}
+
+#menu a {
+      padding: 10px 0;
+    font-size: 15px;
+    line-height: 16px;
+    font-family: "Metric-Regular","Helvetica",sans-serif;
+}
+
+#menu span {
+    font-size: 13px;
+    display: inline;
+    font-family: "Metric-Regular","Helvetica",sans-serif;
+    padding: 1px 3px;
+    color:white;
+    background-color: #d3222a;
+      border-radius: 0px;
+
+
 }
 
 /*
@@ -195,7 +189,16 @@ p.nav-text {
   transform: none;
 }
 
+.essential-nav ul a:link li {
+    font-family: "Metric-Regular","Helvetica",sans-serif;
+    font-size: 1.3em;
+    line-height: 28px;
+    text-transform: uppercase;
+}
 
+.essential-nav ul a:hover li {
+    color:#24608D;
+}
 
 
 
@@ -390,14 +393,9 @@ a:link .teaser {
     margin-top: 30px;
 }
 
-@media (min-width:550px){ /*TURNED OFF FOR MOBILE */
-a:link .blackborder {
+a:visited .teaser {
     background-color: white;
-    padding: 30px;
-    border:10px solid #333;
-    min-height: 270px;
-    margin-top: 30px;
-}
+    border:10px solid #e50000;
 }
 
 a:hover .teaser {
@@ -405,10 +403,7 @@ a:hover .teaser {
     border:10px solid darkgray;
 }
 
-a:visited .teaser {
-    background-color: white;
-    border:10px solid #e50000;
-}
+
 
 .teaser h3 {
     font-family: "OpenSans","Helvetica-Bold",sans-serif;
@@ -429,6 +424,10 @@ a:link span.teasername {
     background-color: #ededed;
 }
 
+a:visited span.teasername {
+    color:#e50000;
+    background-color: #ededed;
+}
 a:hover span.teasername {
     background-color: white;
 }
