@@ -1,0 +1,60 @@
+
+a{
+	text-decoration-color: #007034; 
+	color: #007034;
+
+}
+
+.pquote1{
+	float: left;
+    width: 30%;
+    background: none;
+    color: #007034;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 13px;
+    
+}
+
+.pquote2{
+	float: right;
+    width: 30%;
+    background: none;
+    color: #007034;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 13px;
+   
+
+}
+.quote {
+	color: #007034;
+	font-size: 12px;
+}
+blockquote {
+    margin: 0;}
+
+
+.williams{
+	float:right;
+	width:50%;
+	height: 50%;
+	padding: 13px;
+}
+
+.gagnon{
+	float:left;
+	width:75%;
+	height: 75%;
+	padding: 13px;}
+
+.mi-image{
+	font-size: 12px;
+	color:#007034;
+	font-style: 
+
+}
+
+span.redtype {
+    color:red;
+}
