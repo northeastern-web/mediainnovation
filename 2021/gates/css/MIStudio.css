@@ -1,0 +1,129 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
+.header{
+  padding-top: 200px;
+  width: 100%;
+  background-image: url(../Images/cover.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 200px;
+  text-align: center;
+  color: white;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+  text-shadow: 2px 2px black;
+  font-size: 34pt;
+  line-height: 300%
+}
+
+.byline{
+  font-size: 21px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+}
+
+p{
+  color: black;
+  font-size: 18px;
+  list-style: height 21px;
+}
+
+.column {
+  float:left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:royalblue;
+  }
+
+.text {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  line-height: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+
+img{
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+  }
+figcaption{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;  
+  text-align: center; 
+  padding-left: 20%;
+  padding-right: 20%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
+#Fig1{
+  padding-bottom: 50px;
+}
+
+.row{
+  display: flex;
+  justify-content:center;
+}
+
+#introduction{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#part1{
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+#Fig2total{ 
+  padding-bottom: 50px;
+}
+
+#Fig3, #Fig4, #Fig5, #Fig6, #Fig7total{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#Fig6{
+  padding-left: 500 px;
+}
