@@ -1,0 +1,82 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+  font-family: "GrotzecCond-Demibold";
+   src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/GrotzecCond-Demibold3.woff2);
+ }  
+ 
+ @font-face {
+  font-family: "GrotzecCond-DemiboldItalic";
+   src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/GrotzecCond-DemiboldItalic.woff2);
+ }  
+ 
+ @font-face {
+  font-family: "LeJeunePoster-Regular";
+   src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/LeJeunePoster-Regular.otf);
+ } 
+ 
+ @font-face {
+  font-family: "LeJeunePoster-RegularItalic";
+   src: url(https://journalismdesign.camd.northeastern.edu/lostandfound/fonts/LeJeunePoster-RegularItalic.otf);
+ }
+
+
+
+.mybody {
+  width: 60%;
+margin: 0 auto 0 auto;
+  
+
+  
+}
+
+h1, h2, h3 {
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+}
+h1{font-size:5em}
+p {
+  margin: 18px;
+  line-height:1.75em;
+  font-family: "Georgia",serif;
+}
+
+p.byline {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+img.header-img {
+  display:block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+blockquote::before {
+  content: '\275D';
+  top: -5%;
+  left: -5%;
+}
+
+blockquote::after {
+  content: '\275E';
+  right: 5%;
+  bottom: -5%;
+  z-index: -1;
+}
+
+blockquote::before, blockquote::after {
+  position: absolute;
+  color: rgb(189, 189, 189);
+  font-size: 80px;
+  z-index: -1;
+}

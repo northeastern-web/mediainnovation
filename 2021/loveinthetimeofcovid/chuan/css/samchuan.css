@@ -1,0 +1,111 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+p{
+  color:black;
+  font-size: 20px;
+  line-height: 21px;
+}
+
+img{
+  width: 100%;
+}
+
+.quote{
+  font-size: 20px;
+  text-indent: 50px;
+
+}
+
+.byline{
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h1.headline{
+font-size: 7em;
+text-align: center;
+font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+}
+
+.caption{
+  font: size 10px;;
+  line-height: 21px;
+  color:black;
+}
+
+h2.headline{
+  font-size: 3em;
+  text-align: center;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+  }
+.photogrid{
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+
+.photogrid2{
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+.photogrid3{
+  display: grid;
+  grid-column-gap: auto;
+  grid-template-columns: 30px 30px;
+  grid-template-rows: auto;
+}
+
+.mybody {
+  width: 70%;
+  margin: 0 auto 0 auto;
+  background-color: whitesmoke;
+}
+.header
+{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
+.sticky
+{
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.trends {
+  height:450px;
+  width:100%;
+}
+
+  /*this how you note things */
+  
+  
+
+
