@@ -209,9 +209,10 @@ a:hover
 
 /* --------------------- TYPOGRAPHY ----------------------------- */
 
-.header {
+.teaserheader {
     font-family: "GrotzecCond-Demibold","Helvetica",sans-serif;
     font-size: 7em;
     text-transform: uppercase;
+    text-align: center;
     
 }
