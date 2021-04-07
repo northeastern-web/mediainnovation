@@ -1,0 +1,195 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+h1.headline {
+  font-size: 7em;
+  text-align: center;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+}
+
+h2.headline {
+  font-size: 3em;
+  text-align: center;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+}
+
+p {  
+  color:black;
+  font-size:16px;
+  line-height:21px;
+  font-family: "LeJeunePoster-Regular", "Helvetica", sans-serif
+}
+
+img {
+  width: 50%;
+  text-align: center;
+  padding: 100px
+}
+
+.byline {
+  font-size: 21px ;
+  text-emphasis: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.headline {
+  font-size: 25px
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+figcaption {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+/* .mybody {
+  width: 70%
+  padding: 50px
+} */ 
+
+.mybody{
+  width: 80%;
+  margin:0 auto 0 auto;
+  padding: 100px;
+  background-color: burlywood;
+  
+}
+
+
+h1.headline {
+  position: sticky;
+  top: 50px;
+  background-color: white;
+  opacity: 70%;
+}
+
+.photogrid{
+  display: grid;
+  grid-template-columns: auto, auto, auto;
+  grid-column-gap: 30px;
+  grid-template: auto, 100px
+
+}
+
+img.background {
+  position: sticky;
+
+}
+
+
+p {
+  font-family: 'Roboto-Thin',Helvetica, sans-serif;
+  font-display: solid;
+  font-weight: lighter;
+}
+
+article {
+  font-family: 'Roboto-Thin', Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  line-height: 24pt;
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+h1 {
+  font-size: 24pt;
+  color: #91091e;
+  font-family: 'LEMONMILK-Bold';
+  padding-bottom:5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16pt;
+  color: #91091e;
+  font-family: 'LEMONMILK-Bold';
+  padding-bottom:5px;
+  text-align: center;
+}
+
+ol, ul {
+  width: 77%;
+  font-weight:200
+}
+
+ol li {
+  list-style-type: upper-alpha;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #91091e
+}
+body {
+  padding: 10%;
+  background-color: #fdf1d6;
+}
+
+#part3 {
+  margin-bottom: 200px;
+}
+
+section {
+  font-weight: bold;
+}
+
+h1, h2 {
+  letter-spacing: 1px;
+  word-spacing:1mm
+}
+
+ol, ul {
+  padding-left: 100px;
+}
+
+ol li {
+  color: black
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
