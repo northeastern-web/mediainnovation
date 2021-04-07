@@ -1,0 +1,74 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
+p{
+
+    color: rgb(85, 10, 0);
+    font-size: 14px;
+    line-height: 21px 
+}
+.byline {
+  color: rgb(51, 51, 51);
+  font-size: 21px;
+  letter-spacing: 1px; }
+
+  .headline {
+  font-size: 7em;
+  text-align: center;
+  font-family: "GrotzecCond-Demibold","Helvetica", sans-serif; }
+  
+  h2.headline {
+
+  font-size: 3em;
+  color: brown;
+  }
+
+  figure.social-media-photos img {width: 32.5%;}
+  figure {margin:0}
+
+
+/* --------------------- MY STYLES ------------------------ */
+.photogrid  {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-template-rows: auto 100px;
+}
+
+.mybody {
+  width:70%;
+  margin:0 auto 0 auto;
+  background-color:rgb(253, 253, 253);
+  padding:50px;
+}
+
+h1.headline {
+  position:sticky;
+  position: -webkit-sticky;
+  top:0px;
+  background-color: aliceblue;
+}
+
+
+
