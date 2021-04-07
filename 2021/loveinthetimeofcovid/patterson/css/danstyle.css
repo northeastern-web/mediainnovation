@@ -1,0 +1,98 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  HEADLINE STYLES ---------------------------- */
+
+h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold","Helvetica",sans-serif;   
+}
+
+h2{
+    text-transform: capitalize;    
+    font-size: 3em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold","Helvetica",sans-serif;
+}
+h3 {
+    text-transform: capitalize;
+    font-size: 2em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold","Helvetica",sans-serif;
+}
+/* ----------------------  BASIC CSS FOR MY STORY ---------------------------- */
+
+p {
+  
+    color: dimgray;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+img {
+    width:100%;
+}
+
+.byline {
+    font-size: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+a:link {
+    color: blueviolet;
+    text-decoration: none;
+}
+a:visited {
+    color: crimson;
+    text-decoration: none;
+}
+a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+blockquote {
+    float: right;
+    width: 275px;
+    font-size: 120%;
+    font-style: italic;
+    font-family: "GrotzecCond-Demibod","Helvetica",sans-serif;
+    margin: 0px 0px 10px 10px;
+    padding: 10px;
+    border-top: 1px solid #665544;
+    border-bottom: 1px solid #665544;
+}
+.mybody {
+    width:70%;
+    margin: 0 auto 0 auto;
+    background-color:beige;
+    padding: 30px;
+
+    
+}
+.imagewidth {
+    width: 20%;
+    float: left;
+    margin: 0px 5px 0px 5px;
+}
