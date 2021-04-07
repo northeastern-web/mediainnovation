@@ -22,10 +22,16 @@
 
 /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
 
+.header1{
+  position:sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
 .header{
   padding-top: 200px;
   width: 100%;
-  background-image: url(../Images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,6 +91,7 @@ img{
       margin-right:auto;
       text-align:center;
   }
+  
 figcaption{
   display:block;
   margin-left:auto;
@@ -98,6 +105,8 @@ figcaption{
 
 #Fig1{
   padding-bottom: 50px;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .row{
@@ -119,11 +128,49 @@ figcaption{
   padding-bottom: 50px;
 }
 
+#Fig4{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
 #Fig3, #Fig4, #Fig5, #Fig6, #Fig7total{
   padding-bottom: 50px;
   padding-top: 50px;
+  padding-left:50px;
 }
 
 #Fig6{
   padding-left: 500 px;
+}
+
+aside.pquote1 blockquote p{
+  font-size: 30px;
+  float: left;
+  width: 300px;
+  padding-right: 10px;
+  line-height: 30px;
+  text-align: left;
+  color #666;
+  font-style: italic;
+}
+
+.pquote1 p:first-letter {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+aside.pquote2 blockquote p{
+  font-size: 30px;
+  float: right;
+  width: 300px;
+  padding-left: 10px;
+  line-height: 30px;
+  text-align: right;
+  color #666;
+  font-style: italic;
+}
+
+.pquote2 p:first-letter {
+  font-size: 50px;
+  font-weight: bold;
 }
