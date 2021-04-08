@@ -1,0 +1,145 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+ font-family: "GrotzecCond-Demibold";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+}  
+
+@font-face {
+ font-family: "GrotzecCond-DemiboldItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+}  
+
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+@font-face {
+ font-family: "LeJeunePoster-RegularItalic";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+}
+
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
+
+.mybody {
+  width: 30%; 
+  margin: 0 auto 0 auto; 
+  background-color: white;
+  padding: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  float: center;
+}
+
+.headline {
+  width: 100%; 
+  font-size: 30px;
+  text-align: left;
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+}
+
+.byline{
+  width: 70%  
+  font-size: 21px;
+    letter-spacing: 1px; 
+    text-align:left;
+}
+
+.pquotecam {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
+.photogridcam {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridchart1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridchart2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.pquoterlene {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
+.photogridemma {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.pquotemma {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
+.pquote {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
+.pquoteqi {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+.pquotetran {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
+.photogridtran {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
