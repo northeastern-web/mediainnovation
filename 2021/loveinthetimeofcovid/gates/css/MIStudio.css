@@ -22,12 +22,6 @@
 
 /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
 
-/*.header1{
-  position:sticky;
-  position: -webkit-sticky;
-  top: 0px;
-}*/
-
 #container {
   width: 100%;
   min-height: 100vh;
@@ -69,60 +63,31 @@
   padding-right: 25%;
   }
 
-#introduction{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-#introduction a:link{
-  color: hsl(205, 86, 57);
-}
-
-#part1{
-  padding-bottom: 50px;
-}
-
-#part1 a:link{
-  color: hsl(205, 86, 57);
-}
-
-.figcaption a:link {
-  color: hsl(205, 86, 57);
-}
-
-#container a:link{
-  color: hsl(205, 86%, 57%);
-}
-
-#container  a: visited {
-  color: hsl(205, 86%, 57%);
-}
-
-#container a:hover{
-  text-decoration: underline;
-  color:  #fb0493;
-  }
-
-#container a:active {
-      text-decoration: underline;
-  color:  #fb0493;
-  }
-}
-
-
-#Fig2{
-  justify-content: center;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 p{
   color: black;
   font-size: 18px;
   list-style: height 21px;
   padding-top: 2%;
   padding-bottom: 2%;
+  }
+
+img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  padding-top: 50;
+}
+
+#introduction{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#Fig2{
+  justify-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 #Fig4, #Fig5{
@@ -171,14 +136,6 @@ p{
   flex: 1 0 50%;
   padding-left: 3%;
 }
-
-img{
-      display:block;
-      margin-left:auto;
-      margin-right:auto;
-      text-align:center;
-      padding-top: 50;
-  }
   
 figcaption{
   display:block; 
@@ -198,24 +155,24 @@ aside.pquote1 blockquote p{
   padding-right: 20px;
   line-height: 30px;
   text-align: left;
-  color: hsl(328, 92, 55);
+  color: hsl(328, 92%, 55%);
   font-style: italic;
 }
 
 .pquote1 p:first-letter {
   font-size: 50px;
   font-weight: bold;
-  color: hsl(328, 92, 55);
+  color: hsl(328, 92%, 55%);
 }
 
 aside.pquote2 blockquote p{
   font-size: 30px;
-  float: left;
+  float: right;
   width: 300px;
   padding-right: 15px;
   line-height: 30px;
-  text-align: left;
-  color: hsl(205, 86, 57);
+  text-align: right;
+  color: hsl(205, 86%, 57%);
   font-style: italic;
 }
 
@@ -224,5 +181,20 @@ aside.pquote2 blockquote p{
   font-weight: bold;
 }
 
+#container a:link{
+  color: hsl(205, 86%, 57%);
+}
 
+#container a:visited{
+  color: hsl(205, 86%, 57%);
+}
 
+#container a:hover{
+  text-decoration: underline;
+  color: #fb0493;
+}
+
+#container a:active {
+  text-decoration: underline;
+  color: #fb0493;
+}
