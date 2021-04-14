@@ -27,19 +27,32 @@ html {
 }
 
 body {
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
   padding-bottom: 25px;
 }
 
 p {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(18, 16, 16);
-  line-height: 21px;
+  line-height: 28px;
   padding-left: 40px;
-  padding-right: 40px;
-  font-weight: 400px;
+  padding-right: 45px;
+  font-weight: 300px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.firstcharacter {
+  color: #333333;
+  float: left;
+  font-family: "Helvetica", "Georgia", sans-serif;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
 img {
@@ -63,8 +76,8 @@ img {
 }
 
 .subhead {
-  font-family: "Helvetica", "Georgia", sans-serif;
-  font-size: 30px;
+  font-family: "Trebuchet MS", "Georgia", sans-serif;
+  font-size: 40px;
 }
 
 figcaption {
@@ -113,7 +126,7 @@ a:hover {
 .mybody {
   width: 70%;
   margin: 0 auto 0 auto;
-  background-color: rgb(234, 233, 233);
+  background-color: rgb(255, 255, 255);
   padding: 50px;
 }
 
@@ -155,10 +168,10 @@ iframe {
   color:white;
   text-shadow: 3px 3px black;
   position: relative;
-  top: 15%;
+  top: 35%;
   padding: 40px;
   animation-name: fadein;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 .heroimage h2 {
@@ -167,38 +180,38 @@ iframe {
   font-size: 2em;
   color:white;
   text-shadow: 2px 2px black;
-  top: 75%;
-  padding-top: 55px;
+  top: 65%;
+  padding-top: 195px;
   padding-left: 25px;
   padding-right: 25px;
   opacity: 0;
   animation-name: fadein;
-  animation-delay: 4s;
-  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .heroimage p {
   text-align: center;
   font-family: "Helvetica","Georgia",serif;
-  font-size: 1em;
+  font-size: 1.5em;
   color:white;
   text-transform: uppercase;
   text-shadow: 2px 2px black;
   top: 80%;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 30px;
   padding-right: 30px;
   opacity: 0;
   animation-name: fadein;
-  animation-delay: 8s;
-  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 .quotebox {
   float: left;
-  width: 35%;
+  width: 40%;
   background: whitesmoke url(../images/erin.yennefer.png) top no-repeat;
   background-size: cover;
   color: whitesmoke;
@@ -229,8 +242,9 @@ iframe {
 }
 
 #pullquoteaside {
-  line-height: 45px;
-  margin-right: 35px;
-  height: inherit;
-  text-align: center;
+  line-height: 28px;
+  margin-right: 50px;
+  width: 40%;
+  float: right;
+  text-align: justify;
 }
