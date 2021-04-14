@@ -1,0 +1,22 @@
+/* ------------------ USE BUTTON TO REVEAL TYPE ------------------ */
+
+.mybody {
+    width:60%;
+    margin: 20px auto 0 auto;
+}
+
+p#hiddentype {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    display: none; /* Sets the default to hide the type */
+}
+
+.mybody button {
+    width:50%;
+    height:60px;
+    font-family: "Helvetica",sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}

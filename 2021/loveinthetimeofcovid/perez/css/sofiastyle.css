@@ -20,15 +20,13 @@
   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
 }
 
-/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
-h1.headline {
-  font-size: 7em;
-  text-align: center;
-  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+@font-face {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h2.headline {
-  font-size: 3em;
+/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+h1  {
+  font-size: 7em;
   text-align: center;
   font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
 }
@@ -36,160 +34,91 @@ h2.headline {
 h3 {
   font-size: 25px;
   text-align: center;
-  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+  font-family: "GrotzecCond-DemiboldItalic", "Helvetica", sans-serif;
 }
 
 p {  
+  margin-top: .2%;
   color:black;
-  font-size:16px;
-  line-height:21px;
-  font-family: "LeJeunePoster-Regular", "Helvetica", sans-serif
+  font-size:20px;
+  line-height:25px;
+  font-family: "Roboto", "Helvetica", sans-serif
 }
 
-img {
-  width: 50%;
-  text-align: center;
-  padding: 100px
+article {  
+  display: grid;  
+  grid-template-columns: 1fr 2fr 1fr; 
+  margin-top: 2%;
 }
 
-.byline {
-  font-size: 21px ;
-  text-emphasis: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
+.mainstory {
+  grid-column: 2;
 }
 
-.headline {
-  font-size: 25px
-}
-
-p {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-figcaption {
-  margin-left: 170px;
-  margin-right: 170px;
-}
-
-/* .mybody {
-  width: 70%
-  padding: 50px
-} */ 
-
-.mybody{
-  width: 80%;
-  margin:0 auto 0 auto;
-  padding: 100px;
-  background-color: burlywood;
-  
-}
-
-
-h1.headline {
-  position: sticky;
-  top: 50px;
-  background-color: white;
-  opacity: 70%;
-}
-
-.photogrid{
-  display: grid;
-  grid-template-columns: auto, auto, auto;
-  grid-column-gap: 30px;
-  grid-template: auto, 100px
-
-}
-
-img.background {
-  position: sticky;
-
-}
-
-
-p {
-  font-family: 'Roboto-Thin',Helvetica, sans-serif;
-  font-display: solid;
-  font-weight: lighter;
-}
-
-article {
-  font-family: 'Roboto-Thin', Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  line-height: 24pt;
-  text-align: justify;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-h1 {
-  font-size: 24pt;
-  color: #91091e;
-  font-family: 'LEMONMILK-Bold';
-  padding-bottom:5px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 16pt;
-  color: #91091e;
-  font-family: 'LEMONMILK-Bold';
-  padding-bottom:5px;
-  text-align: center;
-}
-
-ol, ul {
-  width: 77%;
-  font-weight:200
-}
-
-ol li {
-  list-style-type: upper-alpha;
-}
-
-ul li {
-  list-style-type: square;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-  color: grey;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #91091e
-}
-body {
-  padding: 10%;
-  background-color: #fdf1d6;
-}
-
-#part3 {
-  margin-bottom: 200px;
-}
-
-section {
-  font-weight: bold;
-}
-
-h1, h2 {
-  letter-spacing: 1px;
-  word-spacing:1mm
-}
-
-ol, ul {
-  padding-left: 100px;
-}
-
-ol li {
-  color: black
-}
-
-.center {
+.charts {
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
 }
+
+.photos {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.chart2 {
+  width: 80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+/* ---------- Header Image ---------------- */
+
+.pregnantimage {
+  width:100%;    /* Define a width and height for the div */
+  height:1000px;
+  background-image: url("./images/bnw.jpg"); /* Image location. This is from a web site, yours will probably be in your 'images' folder */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  object-fit: cover; /* IMPORTANT!!!! Stops image from distorting to fill the space */
+}
+
+@keyframes fadein { /*define an animation and name it (I've used 'fadein') */
+  /* I'm animating opacity, but you could choose any CSS  property including color, position, etc. */
+  
+  from {opacity: 0;  }
+  to {opacity: 1.0; }
+}
+
+.pregnantimage h1{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 6em;
+  color:black;
+  text-transform: uppercase;
+  position: relative; /* Move the h1 relative to the position of the div */
+  top: 35%; /* Place it 50% of the way down from the top */
+  animation-name: fadein; /* Use 'fadein' on this element */
+  animation-duration: 4s; /* Adjust length of animation in seconds */
+}
+
+.pregnantimage h2{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 3em;
+  color:black;
+  position: relative; /* Move the h1 relative to the position of the div */
+  top: 35%; /* Place it 50% of the way down from the top */
+  animation-name: fadein; /* Use 'fadein' on this element */
+  animation-duration: 4s; /* Adjust length of animation in seconds */
+}
+
+

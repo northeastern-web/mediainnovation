@@ -1,0 +1,36 @@
+/* ------------------ LOAD FONT ------------------ */
+@font-face {
+ font-family: "LeJeunePoster-Regular";
+  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+} 
+
+
+/* ------------------ HERO IMAGE ------------------ */
+.heroimage {
+    width:100%;    /* Define a width and height for the div */
+    height:700px;
+    background-image: url("https://bit.ly/3wfG7cC"); /* Image location. This is from a web site, yours will probably be in your 'images' folder */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    object-fit: cover; /* IMPORTANT!!!! Stops image from distorting to fill the space */
+}
+
+@keyframes fadein { /*define an animation and name it (I've used 'fadein') */
+    /* I'm animating opacity, but you could choose any CSS  property including color, position, etc. */
+    
+    from {opacity: 0;  }
+    to {opacity: 1.0; }
+}
+
+.heroimage h1{
+    text-align: center;
+    font-family: "LeJeunePoster-Regular","Georgia",serif;
+    font-size: 6em;
+    color:white;
+    text-transform: uppercase;
+    position: relative; /* Move the h1 relative to the position of the div */
+    top: 50%; /* Place it 50% of the way down from the top */
+    animation-name: fadein; /* Use 'fadein' on this element */
+    animation-duration: 4s; /* Adjust length of animation in seconds */
+}
