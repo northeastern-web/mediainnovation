@@ -22,12 +22,39 @@
 
 /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
 
+/* unvisited link */
+a:link {
+  color: hotpink;
+}
+
+/* visited link */
+a:visited {
+  color:hotpink;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color:hotpink;
+}
 
 .mybody {
   width: 30%; 
   margin: 0 auto 0 auto; 
   background-color: white;
   padding: 50px;
+  text-align: left;
+  border-left: black;
+  border-right: black;
+}
+
+.mybodywide { 
+  width: 60%;
+  margin: 0 auto 0 auto;
 }
 
 img {
@@ -45,9 +72,8 @@ img {
 
 .byline{
   width: 70%  
-  font-size: 21px;
-    letter-spacing: 1px; 
-    text-align:left;
+  font-size: 10px;
+    text-align: center;
 }
 
 .pquotecam {
@@ -67,16 +93,23 @@ img {
   grid-template-rows: auto;
 }
 
+.photogridkc {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
 .photogridchart1 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-column-gap: 10 px; 
   grid-template-rows: auto;
 }
 
 .photogridchart2 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-column-gap: 10 px; 
   grid-template-rows: auto;
 }
@@ -93,7 +126,7 @@ img {
 
 .photogridemma {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-column-gap: 10 px; 
   grid-template-rows: auto;
 }
@@ -137,9 +170,76 @@ img {
   padding: 2px;
 }
 
+.pquotekacey {
+  float: center;
+  width: 400px;
+  color: darkorchid;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 2px;
+}
+
 .photogridtran {
   display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridqi {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridmatch {
+  display: grid;
   grid-template-columns: auto;
+  grid-column-gap: 1 px; 
+  grid-template-rows: auto;
+}
+
+.photogridchart1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridchart2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+
+.photogridchart3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridchart4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogriderlene {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.photogridasha {
+  display: grid;
+  grid-template-columns: auto auto;
   grid-column-gap: 10 px; 
   grid-template-rows: auto;
 }
