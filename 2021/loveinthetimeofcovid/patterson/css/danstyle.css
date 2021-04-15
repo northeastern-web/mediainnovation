@@ -96,3 +96,66 @@ blockquote {
     float: left;
     margin: 0px 5px 0px 5px;
 }
+/*  responsive profile pic */
+@media (max-width: 550px) { 
+    .profilepic {
+        width: 100%;
+        margin: 0px 2px 0px 2px;
+    }
+}
+/* Larger than phablet */
+@media (min-width: 551px) {
+    .profilepic {
+        width: 100%;
+        margin: 0px 2px 0px 2px;
+    }    
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+     .profilepic {
+        width: 30%;
+        float: left;
+    margin: 0px 5px 0px 5px;
+    }      
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+     .profilepic {
+         width: 40%;
+        float: left;
+    margin: 0px 5px 0px 5px;
+    }      
+}
+/* responsive chart pic */
+@media (max-width: 550px) { 
+    .chartpic {
+        width: 100%;
+        margin: 0px 2px 0px 2px;
+    }
+}
+
+
+@media (min-width: 551px) {
+    .chartpic {
+        width: 100%;
+        margin: 0px 2px 0px 2px;
+    }    
+}
+
+
+@media (min-width: 750px) {
+     .chartpic {
+        width: 60%;
+        margin: 0px 2px 0px 2px;
+    }      
+}
+
+
+@media (min-width: 1000px) {
+     .chartpic {
+        width: 60%;
+        margin: 0px 2px 0px 2px;
+    }      
+}
