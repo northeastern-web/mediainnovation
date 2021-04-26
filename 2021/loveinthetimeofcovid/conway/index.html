@@ -1,43 +1,56 @@
 <html> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
-    <title> My Story </title>
+    <title> Swipes Over Swabs </title>
     <link rel="stylesheet" type="text/css" href="css/conway2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link
         rel="stylesheet"
         type="text/css"
-        href="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/css/loveinthetimeofcovid.css"
-      />
+        href="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/css/loveinthetimeofcovid.css"/>
   </head>
 
 <body> 
 
-  <nav role="navigation" class="essential-nav" >
+ <!---------------------------- Hamburger menu –––––––––––––––––––––––––––––––––––– -->
+    <nav role="navigation" class="essential-nav">
     <div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-      <span></span>
-      <span></span>
-      <ul id="menu">
-        <a href="swipes-over-swabs/index.html"><li>Swipes Over Swabs</li></a>
-        <a href="pregnancy-during-the-pandemic/index.html"><li>Pregnancy During the Pandemic</li></a>
-        <a href="love-during-the-loneliness-virus/index.html"><li>Love During the "Loneliness Virus"</li></a>
-      </ul>
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox"/>
+        <!--
+        Some spans to act as a hamburger.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+        <a href="https://yuriko-schumacher.github.io/love-in-the-covid/"><li>Swipes Over Swabs</li></a>
+        <a href="https://sabrinamochi.github.io/pregnancy-during-the-pandemic/index.html"><li>Pregnancy During the Pandemic</li></a>
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/love-during-the-loneliness-virus/index.html"><li>Love During the &ldquo;Loneliness Virus&rdquo;</li></a>
+        </ul>
     </div>
-      <a href="../index.html">
-          <div style="width:50%; margin: -20px auto 0 auto; height:50px"></div>
-      </a>
-  </nav>
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/index.html" class="heroimage" id="heroimagestart">
+            <div style="width:50%; margin: -20px auto 0 auto; height:50px"></div>
+        </a>
+    </nav>
+    
+<!-- ------------------ MAIN STORY --------- -->
 
-<img src= "images/cover.png">
+  <div class="headimage">
+      <img src= "images/cover-2-cropped.mp4">
+  </div>
 
+<body> 
 <p class="byline">
-  By: Yuriko Schumacher, Roberto Patterson, Brennan Kauffman, and Bridget Conway
+  By Yuriko Schumacher, Roberto Patterson, Brennan Kauffman and Bridget Conway
 </p>
 
 <div class= "mybody">
 
-  <p class= "headline"> Six feet apart. Masks on. Disinfect. It has been a year since the pandemic has pushed people out of arm's reach.</p>
+  <p class= "headline"> Six feet apart. Masks on. Disinfect. It's been a year since the pandemic has pushed people out of arm's reach.</p>
 
 <p>The impact of self-quarantine, isolation and physical distancing have taken a particularly hard toll on college age young people and young adults (ages of 18 and 29). The connections built between friends, family and potential partners have been forced into an unfamiliar dynamic out of their control and, for over a year, without any end in sight.</p>
 
@@ -51,9 +64,12 @@
 </div>
 
 <div class="mybodywide">
-  <div class="photogridcam">
+  <div class="photogrid">
   <img src="images/cam1.jpg">
   <img src="images/cam4.jpg">
+</div>
+<div class="caption">
+<figcaption> Photos from Cameron Hager's Hinge Dating Profile</figcaption>
 </div>
 </div>
 
@@ -64,9 +80,9 @@
 
 <p>"Being single at 26, this is the time I'm normally going to be dating, and the pandemic just kind of stopped that, which was fine for a little bit," he said. "But eventually I'm thinking to myself, 'When am I going to be able to go out with somebody again?'."</p>
 
-<aside class="pquotecam">
+<aside class="pquote">
   <blockquote>
-      <p>But eventually I'm thinking to myself, 'When am I going to be able to go out with somebody again?' And around the time, I downloaded it.</p>
+      <p>But eventually I'm thinking to myself, 'When am I going to be able to go out with somebody again?' And around that time, I downloaded it.</p>
   </blockquote>
 </aside>
 
@@ -76,7 +92,7 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridchart1">
+  <div class="photogridchart">
   <img src="images/chart1final.png">
 </div>
 </div>
@@ -86,7 +102,7 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridchart2">
+  <div class="photogridchart">
   <img src="images/chart2final.png">
 </div>
 </div>
@@ -98,7 +114,7 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridmatch">
+  <div class="photogridchart">
   <img src="images/matchgroup.png">
 </div>
 </div>
@@ -109,7 +125,7 @@
 
 <p>For young people like Erlene Tuazaon, a 25-year-old student and receptionist, the balance between the support of friends and family and that of a potential companion and the difference between the two isn't always the easiest to explain or reconcile.</p>
 
-<aside class="pquoterlene">
+<aside class="pquote">
   <blockquote>
       <p>Since the pandemic started, I was pretty lonely, like to the point that I was depressed,</p>
   </blockquote>
@@ -121,9 +137,12 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogriderlene">
+  <div class="photogrid">
   <img src="images/erlenefin.png">
   <img src="images/erleneblue.png">
+</div>
+<div class="caption">
+<figcaption> Photos from Erlene Tuazaon's Dating Profile</figcaption>
 </div>
 </div>
 
@@ -138,7 +157,7 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridchart3">
+  <div class="photogridchart">
   <img src="images/chart3final.png">
 </div>
 </div>
@@ -148,7 +167,7 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridchart4">
+  <div class="photogridchart">
   <img src="images/chart4final.png">
 </div>
 </div>
@@ -158,7 +177,7 @@
 
 <p>For Emma Hoey, a 22 year-old graduate student at Brandeis University, who began using dating apps more seriously during the pandemic, the answer to that question has been a number one priority, especially since learning she has an autoimmune disorder.</p>
 
-<aside class="pquotemma">
+<aside class="pquote">
   <blockquote>
       <p>I don't even want to get the common cold, let alone an STI or anything like that. So I'm more cautious now than I ever have been.</p>
   </blockquote>
@@ -168,10 +187,13 @@
 </div>
 
 <div class="mybodywide">
-  <div class="photogridemma">
+  <div class="photogrid">
   <img src="images/emma1.jpg">
   <img src="images/emma2.jpg">
 </div>
+<div class="caption">
+  <figcaption> Photos from Emma Hoey's Dating Profile</figcaption>
+  </div>
 </div>
 
 <div class="mybody">
@@ -183,16 +205,7 @@
 <h3>Others feel even more cautious.</h3>
 
 <p>"I don't trust anyone," said Asha, a 20-year-old sophomore in central Massachusetts who requested that her real name not be used because she has a highly visible role on campus, "I don't. And it's not that I don't believe them...I just don't think we know enough about Covid."</p>
-</div> 
 
-<div class="mybodywide">
-  <div class="photogridasha">
-  <img src="images/ashasize.png">
-  <img src="images/ashasize2.png">
-</div>
-</div>
-
-<div class="mybody">
 <p>Not even proof of testing or vaccination is enough to change her mind.</p>
 
 <aside class="pquote">
@@ -206,16 +219,19 @@
 </div> 
 
 <div class="mybodywide">
-  <div class="photogridqi">
+  <div class="photogrid">
   <img src="images/3.png">
   <img src="images/4.png">
 </div>
+<div class="caption">
+  <figcaption> Photos from Qi Zhand's Dating Profile. Images are pixelated to protect privacy, at Qi's request.</figcaption>
+  </div>
 </div>
 
 <div class="mybody">
 <p>"When I was with my ex, the first time I saw him, we both wore masks and tried to avoid groups of people and tried to have a walk in the park," Qi said, "And later on in the relationship I went to his place.</p>
 
-<aside class="pquoteqi">
+<aside class="pquote">
   <blockquote>
       <p>I'm not overly cautious, I'd say average.</p>
   </blockquote>
@@ -235,10 +251,13 @@
 </div>
 
 <div class="mybodywide">
-  <div class="photogridtran">
+  <div class="photogrid">
   <img src="images/thao1.jpg">
   <img src="images/thao2.jpg">
 </div>
+<div class="caption">
+  <figcaption> Photos from Thao Tran's Dating Profile.</figcaption>
+  </div>
 </div>
 
 <div class="mybody">
@@ -246,7 +265,7 @@
 
 <p>Thao recalled at one point becoming obsessed with dating apps. The endless swiping made her feel like she was, "literally swiping on all of the population of Seattle."</p>
 
-<aside class="pquotetran">
+<aside class="pquote">
   <blockquote>
       <p>I felt so lost. I honestly started verbalizing things where I really don't like myself. Like, I don't know who I am. It was really, really tough for me to do that.</p>
   </blockquote>
@@ -261,7 +280,7 @@
 <p>She turned to dating apps, particularly Hinge, to find distraction from her breakup and to escape from the walls of her one-bedroom in South Boston.</p>
 
 <p>Unfortunately, she found it hard to make genuine connections on the app. Her surface-level or one-off interactions on the app made her “treasure the genuine connections” she’d already found in her life. </p>  
-<aside class="pquotekacey">
+<aside class="pquote">
   <blockquote>
     <p>I've realized what matters more.</p>
   </blockquote>
@@ -275,10 +294,13 @@
 </div>
 
 <div class="mybodywide">
-  <div class="photogridkc">
+  <div class="photogrid">
   <img src="images/1.png">
   <img src="images/2.png">
 </div>
+<div class="caption">
+  <figcaption> Left Photo from Kacey Quenzer's Old Hinge Dating Profile. Right photo of Kacey and her boyfriend.</figcaption>
+  </div>
 </div>
 
 <div class="mybody">
@@ -287,15 +309,30 @@
 
 <p>The pandemic has challenged long held notions of our relationships and how we connect. It has highlighted the issues born when self-esteem and self-validation are rooted in confirmation from others. And perhaps, for some, exposed the anxieties of being alone after having been alone for so long.</p>
 
-<p>"I think that people seek that kind of closeness, a direct love relationship, that grows out of an ongoing feeling of isolation. The wish to be with someone. To know you are with someone...They wish for that oneness because there's a kind of paranoia of being alone. That oneness is about fighting that paranoia. About fighting the fear that one is left without," said Chavis.</p>
+<p>"I think that people seek that kind of closeness, a direct love relationship, that grows out of an ongoing feeling of isolation. The wish to be with someone. To know you are with someone...They wish for that oneness because there's a kind of paranoia of being alone. That oneness is about fighting that paranoia. About fighting the fear that one is left without," said Dr. Chavis.</p>
 
-<p>Whatever the "new normal" may look like for relationships, it's clear that things will change. We will have to make new bridges where others have been eroded or forgotten. Further still, we will have to consider the means by which we make and maintain those bridges.</p>
+<h3>What's Next?</h3>
 
+<p>Whatever the "new normal" may look like for relationships, it's clear that how they are formed, maintained and valued has changed. Whether striking up conversation in public social settings or through dating apps, the experiences of the pandemic may impact how those interactions are navigated. "Has this person taken proper public health precautions?" "Am I really ready to meet someone in person?" "How much longer can I be happy being single?"</p>
+
+<p>Will people be eager and open to connect, like Cam? Vigilant about their health yet open to meet, like Emma? Will some still be uncertain about meeting in person, like Asha? Or perhaps, like Thao, find strong connections in familial and friendly spaces? "My emphasis on love right now is my friends and family because they're giving that back to me," said Thao.</p>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="socialicons">
+      <a href="https://www.facebook.com" target = "_blank" class="social-icon"> <i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target = "_blank" class="social-icon"> <i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com" target = "_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+      <a href="https:www.instagram.com" target = "_blank" class="social-icon"> <i class="fa fa-instagram"></i></a>
 </div>
+</div> 
 
-</div>
+
 <p style="text-align: center; padding:30px 0; font-family:'Helvetica'">Produced by students of the Media Innovation masters' program at the <a href="https://camd.northeastern.edu/journalism-at-northeastern/" style="text-decoration: underline" >Northeastern University School of Journalism.</a> &#169; 2021</p>
 <h5 style="border-top: none; margin-top: -2%; text-align: center"><img src="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/images/seal_logotype-768x252.png" width="300px"></h5>
+    
+    
+    
 </body>
+
 
 </html>

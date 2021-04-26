@@ -22,6 +22,9 @@
 
 /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
 
+
+                                                            /* LINK FORMATTING */ 
+
 /* unvisited link */
 a:link {
   color: hotpink;
@@ -42,19 +45,34 @@ a:active {
   color:hotpink;
 }
 
-.mybody {
-  width: 30%; 
-  margin: 0 auto 0 auto; 
-  background-color: white;
-  padding: 50px;
-  text-align: left;
-  border-left: black;
-  border-right: black;
-}
-
+                                                                /* START CODE */ 
+      
+ .mybody {
+    width: 30%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;  
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }
+  
 .mybodywide { 
   width: 60%;
   margin: 0 auto 0 auto;
+}
+
+/*@media (max-width:750px){
+.headimage {
+  width: 100%;
+}
+}*/
+
+@media (min-width:751px){
+.headimage {
+  width: 60%;
+    margin: 0 auto;
+}
 }
 
 img {
@@ -62,6 +80,7 @@ img {
   height: auto;
   float: center;
 }
+
 
 .headline {
   width: 100%; 
@@ -76,170 +95,314 @@ img {
     text-align: center;
 }
 
-.pquotecam {
-  float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
+.photogrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10 px; 
+  grid-template-rows: auto;
+}
+
+.caption {
+  font-size: 11px;
   line-height: 0.9;
   font-style: italic;
   padding: 2px;
 }
 
-.photogridcam {
+.photogridchart {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 10 px; 
   grid-template-rows: auto;
-}
-
-.photogridkc {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogridchart1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogridchart2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.pquoterlene {
-  float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
-  line-height: 0.9;
-  font-style: italic;
-  padding: 2px;
-}
-
-.photogridemma {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.pquotemma {
-  float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
-  line-height: 0.9;
-  font-style: italic;
-  padding: 2px;
 }
 
 .pquote {
   float: center;
   width: 400px;
-  color: darkorchid;
+  color: #00aced;
   font-size: 26px;
   line-height: 0.9;
   font-style: italic;
+  font-weight: bold;
   padding: 2px;
 }
 
-.pquoteqi {
+
+                                                            /* MOBILE CODE MY BODY */  
+
+
+/*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  .mybody {
+    width: 80%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 551px) {
+  .mybody {
+    width: 30%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }    
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .mybody {
+    width: 30%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }      
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .mybody {
+    width: 30%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }      
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .mybody {
+    width: 30%; 
+    margin: 0 auto 0 auto; 
+    background-color: white;
+    padding: 50px;
+    text-align: left;
+    border-left: black;
+    border-right: black;
+  }      
+}
+
+                                                          /* CODE FOR MY BODY WIDE */ 
+
+/*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  .mybodywide { 
+    width: 80%;
+    margin: 0 auto 0 auto;
+  }
+}
+/* Larger than phablet */
+@media (min-width: 551px) {
+  .mybodywide { 
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }    
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .mybodywide { 
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }      
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .mybodywide { 
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }      
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .mybodywide { 
+    width: 60%;
+    margin: 0 auto 0 auto;
+  }      
+}
+
+                                                          /* CODE FOR PULL QUOTES */
+
+/*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  .pquote {
+    float: center;
+    width: 250px;
+    color: #00aced;
+    font-size: 20px;
+    line-height: 0.9;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0px;
+  }
+}
+/* Larger than phablet */
+@media (min-width: 551px) {
+  .pquote {
+    float: center;
+    width: 400px;
+    color: #00aced;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0px;
+  }    
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .pquote {
+    float: center;
+    width: 400px;
+    color: #00aced;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .pquote {
+    float: center;
+    width: 400px;
+    color: #00aced;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px;
+  }  
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .pquote {
+    float: center;
+    width: 400px;
+    color: #00aced;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2px;
+  }
+}
+
+/* CODE FOR HEADER IMAGE */ 
+
+/*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  .imghead {
+    width: 100%;
+    height: auto;
+    float: center;
+  }
+}
+/* Larger than phablet */
+@media (min-width: 551px) {
+  .imghead {
+    width: 100%;
+    height: auto;
+    float: center;
+  } 
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .imghead {
+    width: 100%;
+    height: auto;
+    float: center;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .imghead {
+    width: 100%;
+    height: auto;
+    float: center;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .imghead {
+    width: 100%;
+    height: auto;
+    float: center;
+  }
+}
+
+#menuToggle {
+  width: 100px;
+}
+
+                                                  /* SOCIAL ICONS */ 
+
+
+/* Style all font awesome icons */
+
+.socialicons {
   float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
-  line-height: 0.9;
-  font-style: italic;
-  padding: 2px;
+  margin: auto auto auto auto; 
 }
-.pquotetran {
+
+.fa {
+  padding: 0px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
   float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
-  line-height: 0.9;
-  font-style: italic;
-  padding: 2px;
+  margin: 0 auto 0 auto; 
 }
 
-.pquotekacey {
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
   float: center;
-  width: 400px;
-  color: darkorchid;
-  font-size: 26px;
-  line-height: 0.9;
-  font-style: italic;
-  padding: 2px;
 }
 
-.photogridtran {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  float: center;
 }
 
-.photogridqi {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
+.fa-linkedin {
+  background:#2867B2; 
+  color: white;
+  float: center;
 }
 
-.photogridmatch {
-  display: grid;
-  grid-template-columns: auto;
-  grid-column-gap: 1 px; 
-  grid-template-rows: auto;
+.fa-instagram { 
+  background: #405DE6; 
+  color: white;
+  float: center;
 }
 
-.photogridchart1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogridchart2 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-
-.photogridchart3 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogridchart4 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogriderlene {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}
-
-.photogridasha {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 10 px; 
-  grid-template-rows: auto;
-}

@@ -24,7 +24,7 @@
 p{
   color:black;
   font-size: 22px;
-  line-height: 21px;
+  line-height: 30px;
 }
 
 img{
@@ -42,25 +42,20 @@ img{
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  color:black;
 }
 
-h1.headline{
-font-size: 7em;
-text-align: center;
-font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
-}
+
+h3.headline{
+  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+  }
 
 .caption{
-  font: size 10px;;
+  font: size 16px;
   line-height: 21px;
   color:black;
 }
 
-h2.headline{
-  font-size: 3em;
-  text-align: center;
-  font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
-  }
 .photogrid{
   display: grid;
   grid-column-gap: 30px;
@@ -81,16 +76,70 @@ h2.headline{
   grid-template-rows: auto;
 }
 
-.mybody {
-  width: 70%;
-  margin: 0 auto 0 auto;
-  background-color: whitesmoke;
+@media (max-width:550px){
+    .mybody {
+    width: 95%;
+    margin: 0 auto 0 auto;
+    background-color: lightgray;
+}
+    
+    h1.headline{
+    color:black;
+    font-size: 4em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+    position:relative;
+    top:33%;
+} 
+    h2.headline{
+    color:black;
+    font-size: 1.7em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+    position:relative;
+    top:20%;
+  }   
+    
+    
+}
+
+@media (min-width:551px){
+    .mybody {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: lightgray;
+}
+    
+     h1.headline{
+    color:black;
+    font-size: 7em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+} 
+    h2.headline{
+    color:black;
+    font-size: 3em;
+    text-align: center;
+    font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+  }    
+    
+}
+
+
+.background{
+background-color:lightsteelblue;
 }
 .header
 {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
+}
+
+.header-background{
+  background-image: url();
+  width: 100%;
+  height: auto;
 }
 
 .sticky
@@ -109,8 +158,147 @@ h2.headline{
   border: top 1px;
 }
 
+
+.pquote {
+  float: right;
+  width: 200px;
+  color:white;
+  font-size: 40px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 13px;
+  font-family: "GrotzecCond", "Helvetica", sans-serif;
+}
+
+.pquote2{
+  float: left;
+  width: 200px;
+  color: white;
+  font-size: 26px;
+  line-height: 0.9;
+  font-style: italic;
+  padding: 13px;
+  font-family: "GrotzecCond", "Helvetica", sans-serif;
+}
+
+blockquote {
+  margin: 0;
+}
+
+.pquote p:first-letter {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.quotebox {
+  float: left;
+  width: 200px;
+  color: #fc0;
+  font-size: 12px;
+  line-height: 1.2;
+  padding-top: auto;
+  
+  margin: 0 12px 12px 0;
+  background: lightgray;
+}
+
+.quotebox2 {
+  float: right;
+  width: 200px;
+  color: #fc0;
+  font-size: 12px;
+  line-height: 1.2;
+  padding-top: auto;
+  
+  margin: 0 12px 12px 0;
+  background: lightgray;
+}
+
+.quotebox p {
+  margin: auto;
+}
+
+.quotebox blockquote {
+  font-weight: auto;
+  padding: auto;
+  border-top: auto solid black;
+  margin: 0;
+  background: lightgray;
+}
+
+.quotebox .by {
+  padding: 6px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
   /*this how you note things */
   
-  
+  /*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  .myresponsivebox {
+      background-color: black;
+      height:500px;
+  }
+}
+/* Larger than phablet */
+@media (min-width: 551px) {
+  .myresponsivebox {
+      background-color: red;
+  }    
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+   .myresponsivebox {
+      background-color: green;
+  }      
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+   .myresponsivebox {
+      background-color: blue;
+  }      
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+   .myresponsivebox {
+      background-color: gold;
+  }      
+}
 
 
+div.a {
+  text-indent: 30%;
+}
+
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #297;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #3a8;
+}
