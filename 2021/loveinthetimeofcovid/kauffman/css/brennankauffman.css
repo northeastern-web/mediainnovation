@@ -25,8 +25,8 @@
 p{
 
     color: rgb(0, 0, 0);
-    font-size: 19px;
-    line-height: 21px 
+    font-size: 21px;
+    line-height: 26px 
 }
 .first-letter {
   color: darkmagenta;
@@ -37,12 +37,12 @@ p{
   padding-left: 3px;
 }
 
-}
+figure {margin:0}
 
 
 .byline {
   color: rgb(51, 51, 51);
-  font-size: 21px;
+  font-size: 40px;
   letter-spacing: 1px; }
 
   .headline {
@@ -56,12 +56,20 @@ p{
   color: rgb(0, 0, 0);
   }
 
+@media (max-width:550px){
+  figure.social-media-photos img {width: 100%; margin-top:10px}
+    }
+
+@media (min-width:551px){
   figure.social-media-photos img {width: 32.5%;}
+    }
+  
   
   .graphs2  {display: grid;
   grid-template-columns: 50% 50%;}
   
 .graphs2 img {width: 100%;}
+.flourish-embed {width: 100%;}
 
 
 /* --------------------- MY STYLES ------------------------ */
@@ -70,12 +78,13 @@ p{
   grid-template-columns: auto auto auto;
   grid-column-gap: 30px;
   grid-template-rows: auto 100px;
+  
 
 }
   
 
 .mybody {
-  width:70%;
+  width:78%;
   margin:0 auto 0 auto;
   background-color:rgb(255, 255, 255);
   padding:50px;
