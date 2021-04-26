@@ -1,22 +1,22 @@
 /* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
 
 @font-face {
- font-family: "GrotzecCond-Demibold";
+font-family: "GrotzecCond-Demibold";
   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
 }  
 
 @font-face {
- font-family: "GrotzecCond-DemiboldItalic";
+font-family: "GrotzecCond-DemiboldItalic";
   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
 }  
 
 @font-face {
- font-family: "LeJeunePoster-Regular";
+font-family: "LeJeunePoster-Regular";
   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
 } 
 
 @font-face {
- font-family: "LeJeunePoster-RegularItalic";
+font-family: "LeJeunePoster-RegularItalic";
   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
 }
 
@@ -25,6 +25,11 @@
 }
 
 /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+
+body {
+  background-image: linear-gradient(rgb(211, 211, 211), rgb(228, 204, 143), rgb(233, 117, 97));
+}
+
 h1  {
   font-size: 7em;
   text-align: center;
@@ -38,21 +43,24 @@ h3 {
 }
 
 p {  
-  margin-top: .2%;
+  margin-top: 3%;
   color:black;
-  font-size:20px;
-  line-height:25px;
-  font-family: "Roboto", "Helvetica", sans-serif
+  font-size: 18pt;
+  line-height: 35px;
+  font-family: "Raleway", "Roboto", "Helvetica", sans-serif
 }
 
-article {  
-  display: grid;  
-  grid-template-columns: 1fr 2fr 1fr; 
-  margin-top: 2%;
+figcaption {
+  margin-top: 2%;  
+  color:black;
+  font-size: 14pt;
+  line-height: 23px;
+  font-family: "Raleway", "Roboto", "Helvetica", sans-serif
 }
 
 .mainstory {
   grid-column: 2;
+  padding-bottom: 10%;
 }
 
 .charts {
@@ -62,8 +70,15 @@ article {
   margin-right:auto;
 }
 
+.pregnancytest {
+  width: 80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .photos {
-  width: 500px;
+  width: 50%;
   height: auto;
   display: block;
   margin-left:auto;
@@ -72,19 +87,101 @@ article {
 }
 
 .chart2 {
-  width: 80%;
+  width: 100%;
   display: block;
   margin-left:auto;
   margin-right:auto;
 
 }
 
+.jordan {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 5%;
+}
+
+.dashanna {
+  width: 45%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 2%;
+}
+
+figcaption {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.dashanna2 {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.deavors {
+  float: left;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 5%;
+}
+
+.deavors2 {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.photowithtext blockquote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: 200;
+  position: relative;
+  margin: 1em;
+  padding: 0.5em 2em 0.5em 3em;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  line-height: 35px;
+  border: 3px transparent;
+  color: black;
+}
+
+
+blockquote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20pt;
+  font-weight: 800;
+  position: relative;
+  margin: 1em;
+  padding: 0.5em 2em 0.5em 3em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  line-height: 35px;
+  border: 3px solid rgb(97, 83, 83);
+  color:black;
+}
+
 /* ---------- Header Image ---------------- */
 
 .pregnantimage {
-  width:100%;    /* Define a width and height for the div */
-  height:1000px;
-  background-image: url("./images/bnw.jpg"); /* Image location. This is from a web site, yours will probably be in your 'images' folder */
+  width:100%;
+  height:900px;
+  background-image: url("./images/bnw.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -98,16 +195,52 @@ article {
   to {opacity: 1.0; }
 }
 
+@media (max-width:550px){
+.pregnantimage h1{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 3.5em;
+  color:black;
+  text-transform: uppercase;
+  position: relative;
+  top: 30%;
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+.pregnantimage h2{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 2em;
+  color:black;
+  position: relative; /* Move the h1 relative to the position of the div */
+  top: 25%; /* Place it 50% of the way down from the top */
+  animation-name: fadein; /* Use 'fadein' on this element */
+  animation-duration: 4s; /* Adjust length of animation in seconds */
+}
+
+.pregnantimage h3{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 23pt;
+  color:black;
+  position: relative; /* Move the h1 relative to the position of the div */
+  top: 30%; /* Place it 50% of the way down from the top */
+  animation-name: fadein; /* Use 'fadein' on this element */
+  animation-duration: 4s; /* Adjust length of animation in seconds */
+}
+    }
+@media (min-width:551px){
 .pregnantimage h1{
   text-align: center;
   font-family: "LeJeunePoster-Regular","Georgia",serif;
   font-size: 6em;
   color:black;
   text-transform: uppercase;
-  position: relative; /* Move the h1 relative to the position of the div */
-  top: 35%; /* Place it 50% of the way down from the top */
-  animation-name: fadein; /* Use 'fadein' on this element */
-  animation-duration: 4s; /* Adjust length of animation in seconds */
+  position: relative;
+  top: 20%;
+  animation-name: fadein;
+  animation-duration: 4s;
 }
 
 .pregnantimage h2{
@@ -116,9 +249,177 @@ article {
   font-size: 3em;
   color:black;
   position: relative; /* Move the h1 relative to the position of the div */
-  top: 35%; /* Place it 50% of the way down from the top */
+  top: 25%; /* Place it 50% of the way down from the top */
   animation-name: fadein; /* Use 'fadein' on this element */
   animation-duration: 4s; /* Adjust length of animation in seconds */
 }
 
+.pregnantimage h3{
+  text-align: center;
+  font-family: "LeJeunePoster-Regular","Georgia",serif;
+  font-size: 23pt;
+  color:black;
+  position: relative; /* Move the h1 relative to the position of the div */
+  top: 30%; /* Place it 50% of the way down from the top */
+  animation-name: fadein; /* Use 'fadein' on this element */
+  animation-duration: 4s; /* Adjust length of animation in seconds */
+}
+    }
 
+/* ----------------- Preparing for mobile ---------------- /*
+
+/*  Extra small devices - phones less than 550px */
+@media (max-width: 550px) { 
+  article {  
+    display: block;
+    margin-top: 2%;
+    width: 90%;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 551px) {
+  article {  
+    display: block;   
+    margin-top: 2%;  
+  }    
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  article {  
+    display: block;   
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;  
+  }        
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  article {  
+    display: block;   
+    margin-top: 2%;     
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  article {  
+    display: grid;  
+    grid-template-columns: 25% 50% 25%; 
+    margin-top: 2%;
+  }      
+}
+
+/* -------- block text ------ */ 
+
+/* Blocktext main style */
+.blocktext {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: black;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blocktext p {
+  position: relative;
+  color: black;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  line-height: 130%;
+  padding: 5%;
+}
+
+/* Blockquote header */
+.blocktext #signature {
+  position: relative;
+  color: #292a2b;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blocktext {
+        font-size: 60px;
+  }
+
+}
+
+/* -------- quote ------ */ 
+
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: black;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 80px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote p {
+  position: relative;
+  color: black;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  line-height: 110%;
+  padding: 5%;
+
+}
+
+/* Blockquote header */
+.blockquote #signature {
+  position: relative;
+  color: #292a2b;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after{
+    position: absolute;
+    content: "\201D";
+    color: rgb(135, 9, 9);
+    font-size: 10rem;
+    line-height: 0;
+    bottom: -43px;
+    right: 30px;
+    padding-bottom: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+    .blockquote h1 {
+        font-size: 60px;
+  }
+
+}
