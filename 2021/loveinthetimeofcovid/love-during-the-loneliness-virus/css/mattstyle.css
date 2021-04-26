@@ -55,14 +55,14 @@ p {
 }
 
 @media(max-width:550px) {
-  #meganpic {
+  #onlyfanspic {
     width:100%;
     margin-bottom:10px;
   }
 }
 
 @media(min-width:551px) {
-  #meganpic {
+  #onlyfanspic {
     float: right;
     width:50%;
     margin-left:20px;
@@ -84,6 +84,7 @@ p {
 
 .byline {
   font-size: 24px;
+    line-height: 20px;
   letter-spacing: 1px;
   text-align: left;
   font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
@@ -159,6 +160,39 @@ a:hover {
   to {opacity: 1.0; }
 }
 
+@media (max-width:550px){
+.heroimage h1 {
+  text-align: center;
+  font-family: "GrotzecCond-Demibold","Helvetica",serif;
+  font-size: 8vw;
+  color:white;
+  text-shadow: 3px 3px black;
+  position: relative;
+  top: 35%;
+  padding: 40px;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.heroimage h2 {
+  text-align: center;
+  font-family: "GrotzecCond-Demibold","Helvetica",serif;
+  font-size: 4vw;
+  color:white;
+  text-shadow: 2px 2px black;
+  top: 65%;
+  padding-top: 190px;
+  padding-left: 25px;
+  padding-right: 25px;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+}
+
+@media (min-width:551px){
 .heroimage h1 {
   text-align: center;
   font-family: "GrotzecCond-Demibold","Helvetica",serif;
@@ -188,6 +222,7 @@ a:hover {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+}
 
 .heroimage p {
   text-align: center;
@@ -208,14 +243,30 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
-.mybody button {
-  width:50%;
+@media (max-width:550px){
+.heroimage button {
+  width:60%;
   height:60px;
   font-family: "Helvetica",sans-serif;
+  color: white;
+  background-color: black;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 3.5vw;
   text-align: center;
-  text-transform: uppercase;
+}
+}
+
+@media (min-width:550px){
+.heroimage button {
+  width:20%;
+  height:60px;
+  font-family: "Helvetica",sans-serif;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  font-size: 2vw;
+  text-align: center;
+}
 }
 
 p#hiddentype {
@@ -278,29 +329,72 @@ p#hiddentype {
   padding-bottom: 40px;
 }
 
-.button {
-  background-color: black;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  color: #FFFFFF;
+.btn-group {
+  width: 100%;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 10px;
+  padding-bottom: 30px;
+  margin-left: 2px;
 }
 
-.button span {
+.button {
+  display: inline-block;
+}
+
+.btn-group .button {
+    width:15.5%;
+    margin-right: 1%;
+    height:61px;
+  background-color: #333; /* Green */
+  border: 1px solid black;
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group .nextchapter{
+  background-color: #2b8c6d; /* Green */
+  border: 1px solid black;
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+@media (max-width:550px){
+span.hidemobile {
+    display:none; /* HIDE "CHAPTER" TEXT ON MOBILE */
+}
+}
+
+@media (min-width:551px){
+span.hidemobile {
+    display:block;
+}
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: black;
+}
+
+.heroimage button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.heroimage button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -309,22 +403,13 @@ p#hiddentype {
   transition: 0.5s;
 }
 
-.button:hover span {
+.heroimage button:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.heroimage button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-.mybody button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  width: 50%;
-  font-size: 20px;
 }
 
 .lastp {
@@ -334,8 +419,8 @@ p#hiddentype {
 /*  Extra small devices - phones less than 550px */
 @media (max-width: 550px) { 
   .mybody {
-    width: 90%;
-    margin: 0 auto 0 auto;
+    width: 96%;
+    margin: 0 2% 0 2%;
     background-color: rgb(255, 255, 255);
     padding-top: 0px;
     padding-left: 5px;
@@ -357,3 +442,15 @@ p#hiddentype {
   }   
 }
 
+.btn-group .buttonactive {
+  background-color: #333;
+  border: 1px solid black;
+  opacity: 0.6;
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  float: left;
+}
