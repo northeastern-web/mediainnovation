@@ -1,87 +1,210 @@
 /* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
 
 @font-face {
- font-family: "GrotzecCond-Demibold";
-  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
-}  
-
-@font-face {
- font-family: "GrotzecCond-DemiboldItalic";
-  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
-}  
-
-@font-face {
- font-family: "LeJeunePoster-Regular";
-  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
-} 
-
-@font-face {
- font-family: "LeJeunePoster-RegularItalic";
-  src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
-}
-
-/* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
-.headline {color:rgb(82, 37, 139);
-  text-align: center;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;}
-
-
-p {font-family: "GrotzecCond-Demibold",sans-serif; font-size: 16pt;}
-
-.mybody {
-  width: 80%;
-  margin:0 auto 0 auto;
-}
-
-.center {display: block;
-  margin: 0 auto 0 auto;
-  width: 60%;
-}
-
-
-.mybody h2 {
-  color: rgb(82, 37, 139);
-  text-align: center;
-  font-family:"GrotzecCond-Demibold",sans-serif;
-}
-
-.myvideo {
-  width:60%;
-  margin: 0 auto 0 auto;
-}
-
-img {width: 100%;}
-
-.byline {font-size: 21px; text-transform: uppercase;}
-
-.fade-in {
-  animation: fadeIn ease 20s;
-  -webkit-animation: fadeIn ease 20s;
-  -moz-animation: fadeIn ease 20s;
-  -o-animation: fadeIn ease 20s;
-  -ms-animation: fadeIn ease 20s;
-  }
-  @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-  }
+  font-family: "GrotzecCond-Demibold";
+   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+ }  
+ 
+ @font-face {
+  font-family: "GrotzecCond-DemiboldItalic";
+   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+ }  
+ 
+ @font-face {
+  font-family: "LeJeunePoster-Regular";
+   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+ } 
+ 
+ @font-face {
+  font-family: "LeJeunePoster-RegularItalic";
+   src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+ }
+ 
+ /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+ .headline {color:rgb(82, 37, 139);
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;}
+ 
+ 
+ .mybody p {
+     font-family: "Georgia", "Times", serif;
+     font-size: 16pt;
+     line-height:26px;
+ }
+ 
+ .mybody audio {
+   width: 80%;
+   margin:50 10%;
+ }
+ 
+ .center {
+   margin: 0 auto 0 auto;
+   width: 80%;
+ }
+ 
+ h1.headline {
+       font-family: "GrotzecCond-Demibold", "Helvetica",sans-serif;
+     font-size: 4em;
+     line-height: 0.9em;
+     
+ }
+ .mybody h2 {
+   color: rgb(82, 37, 139);
+   text-align: center;
+   font-family: "GrotzecCond-Demibold", "Helvetica",sans-serif;
+     font-size: 1.5em;
+ }
+ 
+ .myvideo {
+   width:60%;
+   margin: 0 auto 0 auto;
+ }
+ 
+ img {width: 100%;}
+ 
+ .byline {font-size: 21px; text-transform: uppercase;}
+ 
+ .fade-in {
+   animation: fadeIn ease 20s;
+   -webkit-animation: fadeIn ease 20s;
+   -moz-animation: fadeIn ease 20s;
+   -o-animation: fadeIn ease 20s;
+   -ms-animation: fadeIn ease 20s;
+   }
+   @keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+   }
+   
+   @-moz-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+   }
+   
+   @-webkit-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+   }
+   
+   @-o-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+   }
+   
+   @-ms-keyframes fadeIn {
+   0% {opacity:0;}
+   100% {opacity:1;}
+   }
+ 
+ 
+   /* ------------------ Trint CSS ------------------ */
+   /* Trint Styles */
+ 
+ #hypertranscript .strikethrough {
+   text-decoration: line-through;
+ }
+ 
+ #hypertranscript .annotation,
+ #hypertranscript .parannotation {
+   opacity: 0.7;
+ }
+ 
+ #hypertranscript span.highlight-true {
+   background-color: rgba(255, 207, 1, 0.36) !important;
+ }
+ 
+ #hypertranscript span.highlight-blue {
+   background-color: rgba(96, 160, 255, 0.36) !important;
+ }
+ 
+ #hypertranscript span.highlight-green {
+   background-color: rgba(90, 171, 0, 0.36) !important;
+ }
+ 
+ #hypertranscript span.highlight-red {
+   background-color: rgba(255, 0, 89, 0.36) !important;
+ }
+ 
+ #hypertranscript span.highlight-purple {
+   background-color: rgba(221, 86, 249, 0.36) !important;
+ }
+ 
+ #hypertranscript header {
+   font-size: 200%;
+ }
+ 
+ #hypertranscript a {
+   cursor: pointer;
+   color: #000;
+ }
+ 
+ #hypertranscript .active ~ span {
+   color: #666;
+ }
+ 
+ #hypertranscript p.active ~ p span {
+   color: #666;
+ }
+ 
+ #hypertranscript span.search-match {
+   background-color: rgb(156, 172, 199) !important;
+ }
+ 
+ #hypertranscript sub:before {
+   content: '\231C';
+ }
+ 
+ #hypertranscript sub.highlight-duration:before {
+   content: '\231D';
+ }
+ 
+ /* drop.js / trint-player-share.js  Twitter Styles */
+ 
+ a.sharelink {
+   color: #dddddd;
+ }
+ 
+ a.sharelink:hover {
+   color: #ffffff;
+ }
+ 
+ /*  Extra small devices - phones less than 550px */
+ @media (max-width: 550px) { 
+     .mybody {
+         width: 90%;
+         margin: 0 auto 0 auto;
+     }
+ }
+ 
+ /* Larger than phablet */
+ @media (min-width: 551px) {
+     .mybody {
+         width: 60%;
+         margin: 0 auto 0 auto;
+     }    
+ }
+ 
+ /* Larger than tablet */
+ @media (min-width: 750px) {
+         .mybody {
+         width: 60%;
+         margin: 0 auto 0 auto;
+     }
+ }
+ 
+ /* Larger than desktop */
+ @media (min-width: 1000px) {
+     .mybody {
+         width: 60%;
+         margin: 0 auto 0 auto;
+     }    
+ }
+ 
+ /* Larger than Desktop HD */
+ @media (min-width: 1200px) {
+     .mybody {
+         width: 60%;
+         margin: 0 auto 0 auto;
+     }
+ }
+ 
